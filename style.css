@@ -1,0 +1,292 @@
+@font-face {
+    font-family: PlusJakarta;
+    src: url(font/PlusJakartaDisplay-Light.otf);
+}
+
+@font-face {
+    font-family: PlusJakartaRegular;
+    src: url(font/PlusJakartaDisplay-Medium.otf);
+}
+
+@font-face {
+    font-family: PlusJakartaBold;
+    src: url(font/PlusJakartaDisplay-Bold.otf);
+}
+
+@font-face {
+    font-family: Bailamore;
+    src: url(font/Bailamore\ FPU.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PlusJakarta', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    
+}
+
+:root {
+    --pink: #f1bfd4;
+    --blue: #83c4e4;
+    --yellow: #ffd796;
+    --white: #ffffff;
+    --grey: #eff0f2;
+    --black: #232020;
+}
+
+
+/* Header */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo img {
+    max-width: 150px;
+    margin-left: 30px;
+}
+
+.header-image {
+    max-width: 100%;
+    height: auto;
+    display:block;
+  }
+  
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.header{
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-list {
+    display: flex;
+    margin-left: 320px;
+
+}
+
+.nav-item {
+    cursor: pointer;
+    margin-left: 3rem;
+    background-color: var(--pink);
+    padding: 5px 30px 8px 30px; /*top right botton left*/
+    border: 3px solid var(--black);
+    border-radius: 20px;
+    box-shadow: 2px 3px 0px -1px var(--black);
+}
+
+.nav-item:hover {
+    background-color: var(--yellow);
+}
+
+.nav-link{
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--black);
+}
+
+.logout {
+  color: var(--black);
+  padding-right: 50px;
+}
+
+.logout:hover {
+  color: var(--pink);
+}
+
+/* Home */
+
+.landing-page {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.saturn-desc h3 {
+    font-size: 40px;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+.saturn img {
+    margin-top: 80px;
+    margin-right: 160px;
+    max-width: 650px;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 17px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.divider-section {
+    /* box-shadow: 0px 0px 100px 100px var(--pink);  */
+    background: rgb(255,201,224);
+    background: linear-gradient(103deg, rgba(255,201,224,1) 0%, rgba(255,235,203,1) 29%, rgba(255,229,240,1) 100%);
+    width: 100%;
+    padding-top: 0.5px;
+    height: 550px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.divider-section h3 {
+  font-size: 40px;
+  margin-top: 150px;
+}
+
+.divider-canvas {
+  margin-top: 35px;
+  margin-left: 30px;
+  max-width: 90%;
+  height: 90%;
+}
+
+
+/* Artists */
+
+.artists-corner {
+  background-color: var(--white);
+  height: 550px;
+}
+
+.artists-corner h1{
+  color:white;
+  margin-top: -50px;
+  margin-left: 60px;
+  font-size: 100px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: var(--pink);
+}
+
+.artists-corner h2 {
+  margin-top: 20px;
+  margin-left: 60px;
+  font-size: 100px;
+}
+
+.artists-corner h3{
+  color:white;
+  margin-top: -50px;
+  margin-left: 60px;
+  font-size: 100px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.artists-page {
+  display: flex;
+  margin-left: 150px;
+}
+
+.artists-page img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 25px;
+  margin-top: -250px;
+  border: solid 7px var(--white);
+}
+
+.artists-name {
+  display: flex;
+  
+}
+
+.artists-name h3 {
+  margin-left: 180px;
+  opacity: 0.5;
+}
+
+/* Artworks */
+
+.artwork-corner {
+  margin-top: 80px;
+  background-color: var(--white);
+  height: 550px;
+}
+
+.artwork-corner h1{
+  color:white;
+  margin-top: -50px;
+  margin-left: 250px;
+  font-size: 100px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: var(--pink);
+}
+
+.artwork-corner h2 {
+  margin-top: 20px;
+  margin-left: 250px;
+  font-size: 100px;
+}
+
+.artwork-corner h3{
+  color:white;
+  margin-top: -50px;
+  margin-left: 250px;
+  font-size: 100px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.artwork-page img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 25px;
+  margin-top: -250px;
+  border: solid 7px var(--white);
+  margin-bottom: 50px;
+}
+
+/* Reveal */
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
